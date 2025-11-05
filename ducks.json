@@ -1,0 +1,272 @@
+[
+    {
+        "name": "Aucun",
+        "model": "Le Canard Noir",
+        "description": "Juste un canard noir...",
+        "image": "./images/black.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "noir"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Vert",
+        "description": "Juste un canard vert...",
+        "image": "./images/green.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "vert"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Eyesless",
+        "model": "Le Canard Vert Clair",
+        "description": "Juste un canard vert clair... Sans yeux ?",
+        "image": "./images/eyesless.png",
+        "quantity": 1,
+        "lore": "Sa mère a probablement trop bu quand elle l'a conçu, puisqu'il n'a pas d'yeux ni de couleurs sur son bec",
+        "tags": ["normal", "vert", "missprint"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Rouge Fluo",
+        "description": "Juste un canard rouge fluo...",
+        "image": "./images/neon_red.png",
+        "quantity": 2,
+        "lore": "Il est peut-être radioactif, mais en tout cas il est mignon",
+        "tags": ["normal", "rouge"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Orange",
+        "description": "Juste un canard orange...",
+        "image": "./images/orange.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "orange"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Rose",
+        "description": "Juste un canard rose...",
+        "image": "./images/pink.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "rose"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Violet",
+        "description": "Juste un canard violet avec un ressort conique dedans.",
+        "image": "./images/purple.png",
+        "quantity": 1,
+        "lore": "Après avoir fait de nombreux vols planés et vu son frère se faire tatouer dans un style JoJo, il a été torturé jusqu'à ce qu'un ressort soit conçu à l'intérieur de lui",
+        "tags": ["normal", "violet"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Jaune",
+        "description": "Juste un canard jaune...",
+        "image": "./images/yellow.png",
+        "quantity": 10,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Petit Canard Bleu",
+        "description": "Juste un petit canard bleu qui fait pouet-pouet...",
+        "image": "./images/lil_blue.png",
+        "quantity": 2,
+        "lore": "Aucun",
+        "tags": ["normal", "bleu", "petit"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Petit Canard Vert",
+        "description": "Juste un petit canard vert qui fait pouet-pouet...",
+        "image": "./images/lil_green.png",
+        "quantity": 2,
+        "lore": "Aucun",
+        "tags": ["normal", "vert", "petit"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Petit Canard Rose",
+        "description": "Juste un petit canard rose qui fait pouet-pouet...",
+        "image": "./images/lil_pink.png",
+        "quantity": 4,
+        "lore": "Aucun",
+        "tags": ["normal", "rose", "petit"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Petit Canard Rouge",
+        "description": "Juste un petit canard rouge qui fait pouet-pouet...",
+        "image": "./images/lil_red.png",
+        "quantity": 2,
+        "lore": "Aucun",
+        "tags": ["normal", "rouge", "petit"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Petit Canard Jaune",
+        "description": "Juste un petit canard jaune qui fait pouet-pouet...",
+        "image": "./images/lil_yellow.png",
+        "quantity": 4,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune", "petit"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Satanard",
+        "model": "Le Canard Démoniaque",
+        "description": "Un canard venu des enfers",
+        "image": "./images/demon.png",
+        "quantity": 1,
+        "lore": "C'est un envoyé fidèle du Diable en personne ! Mais il est gentil (je crois)",
+        "tags": ["💎 spécial", "rouge"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Coinc Rogers",
+        "model": "Le Canard Super-Héros",
+        "description": "Un canard qui n'hésite pas à planer à votre secours",
+        "image": "./images/hero.png",
+        "quantity": 1,
+        "lore": "Par le passé frêle et gringalet, après avoir suivi un protocole expérimental, il est sorti de sa cryogénisation, il était un super-canard",
+        "tags": ["💎 spécial", "bleu"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "John",
+        "model": "Le Canard Disco Doré",
+        "description": "Un canard qui fait la fête",
+        "image": "./images/lil_disco_gold.png",
+        "quantity": 1,
+        "lore": "Il a mangé une boule à facettes, maintenant il brille de par son énergie",
+        "tags": ["💎 spécial", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Paul",
+        "model": "Le Canard Disco Rosé",
+        "description": "Un canard qui fait la fête",
+        "image": "./images/lil_disco_pink.png",
+        "quantity": 1,
+        "lore": "Il a mangé une boule à facettes, maintenant il brille de par son enthousiasme",
+        "tags": ["💎 spécial", "rose"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "George",
+        "model": "Le Canard Disco Vert",
+        "description": "Un canard qui fait la fête",
+        "image": "./images/lil_disco_green.png",
+        "quantity": 1,
+        "lore": "Il a mangé une boule à facettes, maintenant il brille de par son foie d'acier",
+        "tags": ["💎 spécial", "vert"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Ringo",
+        "model": "Le Canard Disco Rose",
+        "description": "Un canard qui fait la fête",
+        "image": "./images/lil_disco_pinkandgreen.png",
+        "quantity": 1,
+        "lore": "Il a mangé une boule à facettes, maintenant il brille de par son aura festive",
+        "tags": ["💎 spécial", "rose"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Pêché",
+        "description": "Un canard rescapé de la pêche aux canards",
+        "image": "./images/yellow_fishing.png",
+        "quantity": 1,
+        "lore": "Autrefois prisonnier d'un jeu de pêche aux canards, il a trouvé refuge sur une étagère",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Petit Canard Pêché",
+        "description": "Un canard rescapé de la pêche aux canards",
+        "image": "./images/lil_yellow_fishing.png",
+        "quantity": 3,
+        "lore": "Autrefois prisonnier d'un jeu de pêche aux canards, il a trouvé refuge sur une étagère",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Cœur",
+        "description": "Un canard plein d'amour",
+        "image": "./images/white_hearts.png",
+        "quantity": 1,
+        "lore": "Il est le symbole de la nostalgie d'une ancienne professeure d'école",
+        "tags": ["normal", "blanc"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Bisou",
+        "description": "Un canard plein de gratitude",
+        "image": "./images/yellow_kiss.png",
+        "quantity": 1,
+        "lore": "Offert par 2 professeures de lycée en récompense des services offerts",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard De Bain Heureux",
+        "description": "Un canard de bain pour enfant qui crache de l'eau",
+        "image": "./images/yellow_bath.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard De Bain",
+        "description": "Un canard de bain pour enfant",
+        "image": "./images/yellow_bath2.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Jaune... Spécial",
+        "description": "Un canard jaune, spécial à sa manière",
+        "image": "./images/yellow_special.png",
+        "quantity": 1,
+        "lore": "Il a un petit truc en plus... Mais sa mère sera toujours là pour le rassurer",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-11-05"
+    },
+    {
+        "name": "Aucun",
+        "model": "D'autres à venir...",
+        "description": "Il en reste encore 31 à enregistrer, et big flemme...",
+        "image": "",
+        "quantity": 0,
+        "lore": "Aucun",
+        "tags": [],
+        "dateAdded": "2001-01-01"
+    }
+]

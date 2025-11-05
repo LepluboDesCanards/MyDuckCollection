@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Duck Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Duck Collection</h1>
+        <p class="slogan">Admirez-les et remarquez le problème mental que j'ai probablement :3</p>
+        <div class="stats">
+            <p>Total de canards : <span id="total-ducks">0</span></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="filters">
+            <label for="tag-filter">Filtrer par tag :</label>
+            <select id="tag-filter">
+                <option value="all">Tous</option>
+            </select>
+        </div>
+
+        <div class="duck-grid" id="duck-grid">
+            <!-- Les cartes des canards seront ajoutées ici -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <div class="wave-container">
+    <div class="wave"></div>
+
+    </div>
+    <button class="reset-filter" id="reset-filter">Retirer le filtre</button>
+
+</body>
+</html>
