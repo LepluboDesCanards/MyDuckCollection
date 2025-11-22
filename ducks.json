@@ -45,7 +45,7 @@
         "description": "Juste un canard orange...",
         "image": "./images/orange.png",
         "quantity": 1,
-        "lore": "<a href="172.0.0.1">Aucun</a>",
+        "lore": "Aucun",
         "tags": ["normal", "orange"],
         "dateAdded": "2025-11-05"
     },
@@ -265,9 +265,8 @@
         "description": "Il en reste encore 31 à enregistrer, et big flemme...",
         "image": "",
         "quantity": 0,
-        "lore": "Aucun",
+        "lore": "<a href='test'>test</a>",
         "tags": [],
         "dateAdded": "2001-01-01"
     }
 ]
-
