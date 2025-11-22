@@ -45,7 +45,7 @@
         "description": "Juste un canard orange...",
         "image": "./images/orange.png",
         "quantity": 1,
-        "lore": "Aucun",
+        "lore": "<a href="172.0.0.1">Aucun</a>",
         "tags": ["normal", "orange"],
         "dateAdded": "2025-11-05"
     },
@@ -270,3 +270,4 @@
         "dateAdded": "2001-01-01"
     }
 ]
+
