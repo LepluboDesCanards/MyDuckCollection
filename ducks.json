@@ -206,7 +206,7 @@
         "image": "./images/lil_yellow_fishing.png",
         "quantity": 3,
         "lore": "Autrefois prisonnier d'un jeu de pêche aux canards, il a trouvé refuge sur une étagère",
-        "tags": ["normal", "jaune"],
+        "tags": ["petit", "jaune"],
         "dateAdded": "2025-11-05"
     },
     {
@@ -274,10 +274,9 @@
         "model": "D'autres à venir...",
         "description": "Il en reste encore 31 à enregistrer, et big flemme...",
         "image": "",
-        "quantity": 31,
+        "quantity": 0,
         "lore": "<a href='test'>test</a>",
         "tags": [],
         "dateAdded": "2001-01-01"
     }
 ]
-
