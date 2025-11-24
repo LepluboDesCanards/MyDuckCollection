@@ -249,7 +249,7 @@
         "tags": ["normal", "jaune"],
         "dateAdded": "2025-11-05"
     },
-        {
+    {
         "name": "Aucun",
         "model": "Le Canard Jaune... Spécial",
         "description": "Un canard jaune, spécial à sa manière",
@@ -261,11 +261,11 @@
     },
     {
         "name": "Aucun",
-        "model": "Le Canard {?}",
-        "description": "???",
+        "model": "Le Canard {Epitech}",
+        "description": "Un canard qui sera ravi de vous aider dans tous vos projets",
         "image": "./images/epitech.png",
         "quantity": 1,
-        "lore": "???",
+        "lore": "Après plusieurs visites à l'école de l'excellence informatique, <a href='https://www.epitech.eu/'>Epitech</a> m'a gracieusement offert ce canard tout à fait à leur image.",
         "tags": ["💎 spécial", "bleu"],
         "dateAdded": "2025-11-23"
     },
@@ -274,12 +274,9 @@
         "model": "D'autres à venir...",
         "description": "Il en reste encore 31 à enregistrer, et big flemme...",
         "image": "",
-        "quantity": 31,
-        "lore": "<a href='404.png'>test</a>",
+        "quantity": 0,
+        "lore": "<a href='test'>test</a>",
         "tags": [],
         "dateAdded": "2001-01-01"
     }
 ]
-
-
-

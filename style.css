@@ -53,6 +53,10 @@ h1::after {
     border-radius: 2px;
 }
 
+a {
+    color: var(--secondary);
+}
+
 .slogan {
     font-style: italic;
     color: var(--secondary);
@@ -311,4 +315,3 @@ h1::after {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
 }
-
