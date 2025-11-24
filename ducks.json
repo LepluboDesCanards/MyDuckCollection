@@ -274,9 +274,10 @@
         "model": "D'autres à venir...",
         "description": "Il en reste encore 31 à enregistrer, et big flemme...",
         "image": "",
-        "quantity": 0,
+        "quantity": 31,
         "lore": "<a href='test'>test</a>",
         "tags": [],
         "dateAdded": "2001-01-01"
     }
 ]
+
