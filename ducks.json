@@ -251,13 +251,13 @@
     },
     {
         "name": "Aucun",
-        "model": "Le Canard Jaune... Spécial",
-        "description": "Un canard jaune, spécial à sa manière",
-        "image": "./images/yellow_special.png",
+        "model": "Le Canard {?}",
+        "description": "???",
+        "image": "./images/epitech.png",
         "quantity": 1,
-        "lore": "Il a un petit truc en plus... Mais sa mère sera toujours là pour le rassurer",
-        "tags": ["normal", "jaune"],
-        "dateAdded": "2025-11-05"
+        "lore": "???",
+        "tags": ["💎 spécial", "bleu"],
+        "dateAdded": "2025-11-23"
     },
     {
         "name": "Aucun",
@@ -270,3 +270,4 @@
         "dateAdded": "2001-01-01"
     }
 ]
+
