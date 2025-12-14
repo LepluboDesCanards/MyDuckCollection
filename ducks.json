@@ -64,8 +64,8 @@
         "model": "Le Canard Violet",
         "description": "Juste un canard violet avec un ressort conique dedans.",
         "image": "./images/purple.png",
-        "quantity": 1,
-        "lore": "Après avoir fait de nombreux vols planés et vu son frère se faire tatouer dans un style JoJo, il a été torturé jusqu'à ce qu'un ressort soit conçu à l'intérieur de lui",
+        "quantity": 2,
+        "lore": "Après avoir fait de nombreux vols planés et vu son frère se faire tatouer dans un style JoJo, il a été torturé jusqu'à ce qu'un ressort soit coincé à l'intérieur de lui",
         "tags": ["normal", "violet"],
         "dateAdded": "2025-11-05"
     },
@@ -271,13 +271,102 @@
     },
     {
         "name": "Aucun",
+        "model": "Le Canard Singe",
+        "description": "Un canard issu de la fusion de deux énergumènes très étranges",
+        "image": "./images/monkey.png",
+        "quantity": 1,
+        "lore": "Un cadeau d'anniversaire inoubliable",
+        "tags": ["💎 spécial", "marron"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard De Saint-Marin",
+        "description": "Un canard qui protège le territoire de Saint-Marin",
+        "image": "./images/san_marino_guard.png",
+        "quantity": 1,
+        "lore": "Venu tout droit d'Italie",
+        "tags": ["💎 spécial", "👔 métier", "jaune"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Cool",
+        "description": "Un canard super cool et musclé en plus",
+        "image": "./images/cool.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "jaune"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Policier",
+        "description": "Un canard qui fait respecter la l'oie",
+        "image": "./images/cop.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "👔 métier", "jaune"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Dinosaure",
+        "description": "CROOOOAR (j'aurais pas dû le laisser écrire sa description...)",
+        "image": "./images/dinosaur.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "vert"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Duckteur Coinc",
+        "model": "Le Canard Médecin",
+        "description": "Un canard qui guérira tous vos bobos",
+        "image": "./images/duckter.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "👔 métier", "jaune"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Flotteur",
+        "description": "Un canard qui flotte super bien",
+        "image": "./images/flotty.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Gentleman",
+        "description": "Un canard fort bien gentil-canard",
+        "image": "./images/gentleduck.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "jaune"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Roi De L'Amour",
+        "description": "Un canard qui reigne dans l'amour et la gaieté",
+        "image": "./images/king_of_love.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "jaune"],
+        "dateAdded": "2025-12-14"
+    },
+    {
+        "name": "Aucun",
         "model": "D'autres à venir...",
-        "description": "Il en reste encore 31 à enregistrer, et big flemme...",
+        "description": "Il en reste encore 21 à enregistrer, et big flemme...",
         "image": "",
-        "quantity": 31,
-        "lore": "<a href='test'>test</a>",
+        "quantity": 21,
+        "lore": "Aucun",
         "tags": [],
         "dateAdded": "2001-01-01"
     }
 ]
-
