@@ -360,6 +360,26 @@
         "dateAdded": "2025-12-14"
     },
     {
+        "name": "THE DOOM QUACKER",
+        "model": "Le Canard DOOM SLAYER",
+        "description": "Un canard animé par la colère, l'Enfer ne lui fait pas peur… L'Enfer a peur de lui",
+        "image": "./images/doom_slayer.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "vert", "🛒 TUBBZ"],
+        "dateAdded": "2025-12-19"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Léopard",
+        "description": "Un canard comando qui sait se fondre dans le décor",
+        "image": "./images/leopard.png",
+        "quantity": 1,
+        "lore": "Après avoir passé plus de 6 mois en mission d'infiltration dans une salle de classe, il a enfin eu le droit de rentrer auprès des siens.",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-12-19"
+    },
+    {
         "name": "Aucun",
         "model": "D'autres à venir...",
         "description": "Il en reste encore 21 à enregistrer, et big flemme...",
