@@ -346,7 +346,7 @@
         "image": "./images/gentleduck.png",
         "quantity": 1,
         "lore": "Aucun",
-        "tags": ["💎 spécial", "jaune"],
+        "tags": ["normal", "jaune"],
         "dateAdded": "2025-12-14"
     },
     {
@@ -381,12 +381,192 @@
     },
     {
         "name": "Aucun",
-        "model": "D'autres à venir...",
-        "description": "Il en reste encore 21 à enregistrer, et big flemme...",
-        "image": "",
-        "quantity": 21,
+        "model": "Le Canard Américain",
+        "description": "Un canard aux couleurs des USA et un fusil d'assaut dans son chapeau parce que vive le 2ème amendement !",
+        "image": "./images/american.png",
+        "quantity": 1,
         "lore": "Aucun",
-        "tags": [],
-        "dateAdded": "2001-01-01"
+        "tags": ["💎 spécial", "bleu", "🛒 BUD"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aquaduck",
+        "model": "Le Canard Aquatique",
+        "description": "Un canard habile dans l'eau et qui communique avec les dauphins.",
+        "image": "./images/aquaduck.png",
+        "quantity": 1,
+        "lore": "Il est l'un des tout premiers canards de cette collection",
+        "tags": ["normal", "bleu"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Bandana",
+        "description": "Un canard tatoué de la tête aux palmes en motif cachemire.",
+        "image": "./images/bandana.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "rose", "🛒 BUD"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Bateau",
+        "description": "Un canard qui transporte ses petits en prenant une forme de barque.",
+        "image": "./images/boat.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Mini Canard",
+        "description": "Un canard minuscule qui voyage sur le dos de sa mère bateau.",
+        "image": "./images/mini.png",
+        "quantity": 3,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune", "petit"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Michael Duckson",
+        "model": "Le Canard Roi De La Pop",
+        "description": "Un canard qui a fait vibrer des milliards d'âmes de par sa musique d'exception.",
+        "image": "./images/duckson.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "rose", "🛒 BUD"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Pêcheur",
+        "description": "Un canard qui aime pêcher.",
+        "image": "./images/fisherduck.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune", "👔 métier"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Fleuri",
+        "description": "Un canard à la palme tellement verte que les fleurs poussent directement dessus.",
+        "image": "./images/flowers.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "bleu", "🛒 BUD"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Mélomane",
+        "description": "Un canard qui a la musique au centre de sa vie, ne lui laissez pas le Bluetooth, sa playlist dure pendant quelques années.",
+        "image": "./images/headphone.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Hippie",
+        "description": "Un canard au mode de vie \"à la cool\" qui lutte contre la violence dans le monde.",
+        "image": "./images/hippie.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "violet", "🛒 BUD"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Journaliste",
+        "description": "Un canard auquel aucun scoop n'échappe.",
+        "image": "./images/journalist.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "gris", "👔 métier", "🛒 BUD"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Roi",
+        "description": "Un canard autoproclamé roi, heureusement pour lui, sa tête est toujours attachée à son corps.",
+        "image": "./images/king.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "jaune"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Maneki-Neko",
+        "description": "Un canard qui apportera la chance dans vos vies.",
+        "image": "./images/manekineko.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "blanc"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Capitaine Duck",
+        "model": "Le Canard Marin",
+        "description": "Un canard qui essaie de garder le cap, mais la gouvernaille lui file entre les ailes.",
+        "image": "./images/marine.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "bleu", "👔 métier"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Infirmière",
+        "description": "Un canard qui s'occupera très bien de vous.",
+        "image": "./images/nurse.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "blanc", "👔 métier"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Peace & Love",
+        "description": "Un canard très impliqué dans sa cause, à tel point qu'il a tatoué son slogan sur son torse.",
+        "image": "./images/peaceandlove.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["normal", "jaune"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Thomas Pescoinc",
+        "model": "Le Canard Astronaute",
+        "description": "Un canard qui a atteint son rêve de rejoindre l'ISS.",
+        "image": "./images/spaceship.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "blanc", "👔 métier"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "<strike>Donald Trump</strike>",
+        "model": "Le Canard Trump",
+        "description": "Un canard président aux décisions et démarches douteuses. Mais bon, la \"démocratie\" a parlé.",
+        "image": "./images/trump.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "bleu"],
+        "dateAdded": "2025-12-20"
+    },
+    {
+        "name": "Aucun",
+        "model": "Le Canard Travailleur",
+        "description": "Un canard qui travaille dur.",
+        "image": "./images/worker.png",
+        "quantity": 1,
+        "lore": "Aucun",
+        "tags": ["💎 spécial", "vert", "👔 métier", "🛒 BUD"],
+        "dateAdded": "2025-12-20"
     }
 ]
