@@ -21,15 +21,32 @@
         <p class="slogan">Admirez-les et remarquez le problème mental que j'ai probablement :3</p>
         <div class="stats">
             <p>Total de canards : <span id="total-ducks">0</span></p>
+            <p id="filtered-results" style="display: none;">Résultats trouvés : <span id="filtered-count">0</span></p>
         </div>
     </header>
 
     <main>
         <div class="filters">
-            <label for="tag-filter">Filtrer par tag :</label>
-            <select id="tag-filter">
-                <option value="all">Tous</option>
-            </select>
+            <div class="filter-group">
+                <label for="color-filter">Couleur :</label>
+                <select id="color-filter">
+                    <option value="-">-</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="type-filter">Type :</label>
+                <select id="type-filter">
+                    <option value="-">-</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="brand-filter">Marque :</label>
+                <select id="brand-filter">
+                    <option value="-">-</option>
+                </select>
+            </div>
         </div>
 
         <div class="duck-grid" id="duck-grid">
@@ -43,7 +60,6 @@
     <div class="wave"></div>
 
     </div>
-    <button class="reset-filter" id="reset-filter">Retirer le filtre</button>
 
 </body>
 </html>

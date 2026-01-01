@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const duckGrid = document.getElementById('duck-grid');
-    const tagFilter = document.getElementById('tag-filter');
+    const colorFilter = document.getElementById('color-filter');
+    const typeFilter = document.getElementById('type-filter');
+    const brandFilter = document.getElementById('brand-filter');
     const totalDucksSpan = document.getElementById('total-ducks');
-    const resetFilterBtn = document.getElementById('reset-filter');
+    const filteredResultsSpan = document.getElementById('filtered-results');
+    const filteredCountSpan = document.getElementById('filtered-count');
 
     let ducks = [];
-    let allTags = new Set();
-    let filteredDucks = [];
-    let isTagClicked = false;
+    let tagsByCategory = {
+        colors: [],
+        types: [],
+        brands: []
+    };
 
     // Fonction pour formater la date
     function formatDate(dateString) {
@@ -19,32 +24,96 @@ document.addEventListener('DOMContentLoaded', function() {
         return `${day}/${month}/${year}`;
     }
 
-    // Charger les canards depuis le fichier JSON
+    // Obtenir la date du jour au format YYYY-MM-DD
+    function getTodayDate() {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    }
+
+    // Créer la carte "Aucun Canards Trouvé"
+    function createNoResultsCard() {
+        return {
+            "name": "",
+            "model": "Aucun Canards Trouvé",
+            "description": "essayez d'ajuster vos filtres de recherche",
+            "image": "./images/404.png",
+            "quantity": 0,
+            "lore": "",
+            "tags": [],
+            "dateAdded": getTodayDate()
+        };
+    }
+
+    // Charger les données depuis le fichier JSON
     fetch('ducks.json')
         .then(response => response.json())
         .then(data => {
-            ducks = data.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
-            ducks.forEach(duck => {
-                duck.tags.forEach(tag => allTags.add(tag));
-            });
-            updateTagFilter();
-            displayDucks(ducks);
-            totalDucksSpan.textContent = ducks.reduce((sum, duck) => sum + duck.quantity, 0);
+            tagsByCategory = data.tags;
+            ducks = data.ducks.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+
+            updateFilters();
+            applyFilters();
+            updateTotalDucks();
+        })
+        .catch(err => {
+            console.error('Erreur lors du chargement de ducks.json', err);
         });
 
-    // Mettre à jour les options de filtre
-    function updateTagFilter() {
-        tagFilter.innerHTML = '';
-        const optionTous = document.createElement('option');
-        optionTous.value = 'all';
-        optionTous.textContent = 'Tous';
-        tagFilter.appendChild(optionTous);
-        allTags.forEach(tag => {
+    // Mettre à jour les options des menus déroulants
+    function updateFilters() {
+        colorFilter.innerHTML = '<option value="-">-</option>';
+        tagsByCategory.colors.forEach(color => {
             const option = document.createElement('option');
-            option.value = tag;
-            option.textContent = tag;
-            tagFilter.appendChild(option);
+            option.value = color;
+            option.textContent = color;
+            colorFilter.appendChild(option);
         });
+
+        typeFilter.innerHTML = '<option value="-">-</option>';
+        tagsByCategory.types.forEach(type => {
+            const option = document.createElement('option');
+            option.value = type;
+            option.textContent = type;
+            typeFilter.appendChild(option);
+        });
+
+        brandFilter.innerHTML = '<option value="-">-</option>';
+        tagsByCategory.brands.forEach(brand => {
+            const option = document.createElement('option');
+            option.value = brand;
+            option.textContent = brand;
+            brandFilter.appendChild(option);
+        });
+    }
+
+    // Appliquer les filtres et mettre à jour l'affichage des résultats filtrés
+    function applyFilters() {
+        const selectedColor = colorFilter.value;
+        const selectedType = typeFilter.value;
+        const selectedBrand = brandFilter.value;
+
+        const matched = ducks.filter(duck => {
+            const hasColor = selectedColor === '-' || duck.tags.includes(selectedColor);
+            const hasType = selectedType === '-' || duck.tags.includes(selectedType);
+            const hasBrand = selectedBrand === '-' || duck.tags.includes(selectedBrand);
+            return hasColor && hasType && hasBrand;
+        });
+
+        const matchedCount = matched.length;
+
+        let ducksToDisplay = matchedCount === 0 ? [createNoResultsCard()] : matched;
+        displayDucks(ducksToDisplay);
+
+        const hasActiveFilter = selectedColor !== '-' || selectedType !== '-' || selectedBrand !== '-';
+        if (hasActiveFilter) {
+            filteredCountSpan.textContent = matchedCount;
+            filteredResultsSpan.style.display = 'block';
+        } else {
+            filteredResultsSpan.style.display = 'none';
+        }
     }
 
     // Afficher les canards
@@ -73,42 +142,27 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             duckGrid.appendChild(duckCard);
         });
-
-        // Ajouter les écouteurs d'événements aux tags
-        document.querySelectorAll('.tag').forEach(tagElement => {
-            tagElement.addEventListener('click', function() {
-                const selectedTag = this.getAttribute('data-tag');
-                filterByTag(selectedTag, true);
-            });
-        });
     }
 
-    // Filtrer par tag (via clic ou menu déroulant)
-    function filterByTag(selectedTag, fromClick = false) {
-        isTagClicked = fromClick;
-        if (selectedTag === 'all') {
-            filteredDucks = [...ducks];
-            resetFilterBtn.classList.remove('show');
-        } else {
-            filteredDucks = ducks.filter(duck => duck.tags.includes(selectedTag));
-            if (fromClick) {
-                resetFilterBtn.classList.add('show');
-            } else {
-                resetFilterBtn.classList.remove('show');
-            }
-        }
-        displayDucks(filteredDucks);
+    // Mettre à jour le total complet de la collection
+    function updateTotalDucks() {
+        const grandTotal = ducks.reduce((sum, duck) => sum + (duck.quantity || 0), 0);
+        totalDucksSpan.textContent = grandTotal;
     }
 
-    // Filtrer via menu déroulant
-    tagFilter.addEventListener('change', function() {
-        filterByTag(this.value, false);
+    // Écouteurs sur les menus
+    colorFilter.addEventListener('change', function() {
+        applyFilters();
+        updateTotalDucks();
     });
 
-    // Réinitialiser le filtre
-    resetFilterBtn.addEventListener('click', function() {
-        tagFilter.value = 'all';
-        filterByTag('all', false);
-        this.classList.remove('show');
+    typeFilter.addEventListener('change', function() {
+        applyFilters();
+        updateTotalDucks();
+    });
+
+    brandFilter.addEventListener('change', function() {
+        applyFilters();
+        updateTotalDucks();
     });
 });

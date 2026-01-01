@@ -84,12 +84,23 @@ h1::after {
 }
 
 .filters {
-    max-width: 300px;
+    max-width: 900px;
     margin: 0 auto 2.5rem;
     position: relative;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.filters label {
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
     display: block;
     margin-bottom: 0.5rem;
     color: var(--accent);
@@ -97,7 +108,7 @@ h1::after {
     font-size: 0.9rem;
 }
 
-.filters select {
+.filter-group select {
     width: 100%;
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
@@ -119,8 +130,8 @@ h1::after {
     box-shadow: var(--shadow-subtle);
 }
 
-.filters select:focus,
-.filters select:hover {
+.filter-group select:focus,
+.filter-group select:hover {
     border-color: var(--secondary);
     box-shadow: var(--glow-secondary);
     outline: none;
@@ -269,35 +280,14 @@ h1::after {
     .slogan {
         font-size: 1rem;
     }
-}
-
-/* Bouton de réinitialisation */
-.reset-filter {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: var(--bg-dark);
-    border: none;
-    border-radius: 8px;
-    padding: 0.7rem 1.5rem;
-    font-weight: 600;
-    box-shadow: var(--shadow-hover);
-    transition: var(--transition);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-    font-size: 0.9rem;
-}
-
-.reset-filter.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.reset-filter:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--glow-primary);
+    .filters {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .filter-group {
+        min-width: 100%;
+    }
 }
 
 /* Effet de particules subtiles */
