@@ -292,7 +292,7 @@
             "description": "Un canard qui protège le territoire de Saint-Marin",
             "image": "./images/san_marino_guard.png",
             "quantity": 1,
-            "lore": "Venu tout droit d'Italie",
+            "lore": "Venu tout droit de Saint-Marin !",
             "tags": ["💎 spécial", "👔 métier", "jaune"],
             "dateAdded": "2025-12-14"
         },
@@ -453,7 +453,7 @@
             "image": "./images/fisherduck.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["normal", "jaune", "👔 métier"],
+            "tags": ["normal", "👔 métier", "jaune"],
             "dateAdded": "2025-12-20"
         },
         {
@@ -493,7 +493,7 @@
             "image": "./images/journalist.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["💎 spécial", "gris", "👔 métier", "🛒 BUD"],
+            "tags": ["💎 spécial", "👔 métier", "gris", "🛒 BUD"],
             "dateAdded": "2025-12-20"
         },
         {
@@ -523,7 +523,7 @@
             "image": "./images/marine.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["normal", "bleu", "👔 métier"],
+            "tags": ["normal", "👔 métier", "bleu"],
             "dateAdded": "2025-12-20"
         },
         {
@@ -533,7 +533,7 @@
             "image": "./images/nurse.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["normal", "blanc", "👔 métier"],
+            "tags": ["normal", "👔 métier", "blanc"],
             "dateAdded": "2025-12-20"
         },
         {
@@ -553,7 +553,7 @@
             "image": "./images/spaceship.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["💎 spécial", "blanc", "👔 métier"],
+            "tags": ["💎 spécial", "👔 métier", "blanc"],
             "dateAdded": "2025-12-20"
         },
         {
@@ -573,7 +573,7 @@
             "image": "./images/worker.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["💎 spécial", "vert", "👔 métier", "🛒 BUD"],
+            "tags": ["💎 spécial", "👔 métier", "vert", "🛒 BUD"],
             "dateAdded": "2025-12-20"
         }
     ]
