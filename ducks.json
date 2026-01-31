@@ -1,6 +1,6 @@
 {
     "tags": {
-        "colors": ["rouge", "orange", "jaune", "vert", "bleu", "violet"," rose", "marron", "gris", "noir", "blanc"],
+        "colors": ["rouge", "orange", "jaune", "vert", "bleu", "violet","rose", "marron", "gris", "noir", "blanc"],
         "types": ["normal", "petit", "💎 spécial", "👔 métier", "missprint"],
         "brands": ["🛒 BUD", "🛒 TUBBZ"]
     },
@@ -577,4 +577,5 @@
             "dateAdded": "2025-12-20"
         }
     ]
+
 }
