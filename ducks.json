@@ -251,7 +251,7 @@
             "model": "Le Canard De Bain",
             "description": "Un canard de bain pour enfant",
             "image": "./images/yellow_bath2.png",
-            "quantity": 1,
+            "quantity": 2,
             "lore": "Aucun",
             "tags": ["normal", "jaune"],
             "dateAdded": "2025-11-05"
