@@ -2,7 +2,7 @@
     "tags": {
         "colors": ["rouge", "orange", "jaune", "vert", "bleu", "violet","rose", "marron", "gris", "noir", "blanc"],
         "types": ["normal", "petit", "💎 spécial", "👔 métier", "missprint"],
-        "brands": ["🛒 BUD", "🛒 TUBBZ"]
+        "brands": ["🛒 BUD", "🛒 TUBBZ", "🛒 LILALU"]
     },
 
     "ducks": [
@@ -283,7 +283,7 @@
             "image": "./images/monkey.png",
             "quantity": 1,
             "lore": "Un cadeau d'anniversaire inoubliable",
-            "tags": ["💎 spécial", "marron"],
+            "tags": ["💎 spécial", "marron", "🛒 LILALU"],
             "dateAdded": "2025-12-14"
         },
         {
@@ -303,7 +303,7 @@
             "image": "./images/cool.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["💎 spécial", "jaune"],
+            "tags": ["💎 spécial", "jaune", "🛒 LILALU"],
             "dateAdded": "2025-12-14"
         },
         {
@@ -363,7 +363,7 @@
             "image": "./images/king_of_love.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["💎 spécial", "jaune"],
+            "tags": ["💎 spécial", "jaune","🛒 LILALU"],
             "dateAdded": "2025-12-14"
         },
         {
@@ -513,7 +513,7 @@
             "image": "./images/manekineko.png",
             "quantity": 1,
             "lore": "Aucun",
-            "tags": ["💎 spécial", "blanc"],
+            "tags": ["💎 spécial", "blanc", "🛒 LILALU"],
             "dateAdded": "2025-12-20"
         },
         {
@@ -575,7 +575,46 @@
             "lore": "Aucun",
             "tags": ["💎 spécial", "👔 métier", "vert", "🛒 BUD"],
             "dateAdded": "2025-12-20"
+        },
+        {
+            "name": "Aucun",
+            "model": "Le Canard Planeur",
+            "description": "Un canard qui plane, sans même bouger ses ailes.",
+            "image": "./images/high.png",
+            "quantity": 1,
+            "lore": "Aucun",
+            "tags": ["💎 spécial", "jaune", "🛒 LILALU"],
+            "dateAdded": "2026-05-09"
+        },
+        {
+            "name": "Aucun",
+            "model": "Le Bouquet De Canards",
+            "description": "Un bouquet de canards.",
+            "image": "./images/bouquet.png",
+            "quantity": 9,
+            "lore": "Aucun",
+            "tags": ["💎 spécial", "jaune", "vert", "bleu"],
+            "dateAdded": "2026-05-09"
+        },
+        {
+            "name": "Aucun",
+            "model": "Le Canard De Bain Rose",
+            "description": "Un canard de bain rose pour enfant",
+            "image": "./images/pink_bath2.png",
+            "quantity": 1,
+            "lore": "Aucun",
+            "tags": ["normal", "rose"],
+            "dateAdded": "2026-05-09"
+        },
+        {
+            "name": "Aucun",
+            "model": "Le Canard Bleu",
+            "description": "Juste un canard bleu...",
+            "image": "./images/blue.png",
+            "quantity": 1,
+            "lore": "Aucun",
+            "tags": ["normal", "bleu"],
+            "dateAdded": "2026-05-09"
         }
     ]
-
 }
