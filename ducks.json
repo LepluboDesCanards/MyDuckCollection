@@ -615,6 +615,26 @@
             "lore": "Aucun",
             "tags": ["normal", "bleu"],
             "dateAdded": "2026-05-09"
+        },
+        {
+            "name": "Aucun",
+            "model": "Le Canard Amsterdam",
+            "description": "Un canard symbolique d'Amsterdam",
+            "image": "./images/dutch.png",
+            "quantity": 1,
+            "lore": "Il est le souvenir d'une \"première\" rencontre exeptionelle (encore merci à vous <3)",
+            "tags": ["💎 spécial", "blanc"],
+            "dateAdded": "2026-08-08"
+        },
+        {
+            "name": "Aucun",
+            "model": "Le Canard Licorne Rose",
+            "description": "Un canard issu d'une fusion particulière.",
+            "image": "./images/glowy_unicorn.png",
+            "quantity": 1,
+            "lore": "Aucun",
+            "tags": ["💎 spécial", "rose", "🛒 LILALU"],
+            "dateAdded": "2026-08-08"
         }
     ]
 }
