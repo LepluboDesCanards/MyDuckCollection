@@ -74,6 +74,47 @@ h1::after {
     font-weight: 300;
 }
 
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0;
+    padding: 0.85rem 1.6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(116, 185, 255, 0.14);
+    color: var(--text-light);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.home-button:hover {
+    transform: translateY(-1px);
+    background: rgba(116, 185, 255, 0.22);
+}
+
+.hidden {
+    display: none !important;
+}
+
+body.single-view header h1,
+body.single-view header .slogan,
+body.single-view header .stats,
+body.single-view .filters {
+    display: none !important;
+}
+
+body.single-view .duck-grid {
+    max-width: 700px;
+    margin: 2rem auto 3rem;
+    padding: 0 1.5rem;
+}
+
 .stats {
     font-size: 1.1rem;
     color: var(--secondary);

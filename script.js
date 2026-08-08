@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalDucksSpan = document.getElementById('total-ducks');
     const filteredResultsSpan = document.getElementById('filtered-results');
     const filteredCountSpan = document.getElementById('filtered-count');
+    const homeButton = document.getElementById('home-button');
 
     let ducks = [];
     let tagsByCategory = {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         types: [],
         brands: []
     };
+    let selectedDuckIndex = null;
 
     // Fonction pour formater la date
     function formatDate(dateString) {
@@ -52,10 +54,20 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             tagsByCategory = data.tags;
-            ducks = data.ducks.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+            ducks = data.ducks;
 
             updateFilters();
-            applyFilters();
+            const { index: entryIndex } = getDuckIndexFromUrl();
+            if (entryIndex !== null) {
+                selectedDuckIndex = entryIndex;
+                setSingleView(true);
+                displaySingleDuck(entryIndex);
+                showHomeButton(true);
+            } else {
+                setSingleView(false);
+                showHomeButton(false);
+                applyFilters();
+            }
             updateTotalDucks();
         })
         .catch(err => {
@@ -144,6 +156,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    function displaySingleDuck(index) {
+        const duckIndex = Number(index) - 1;
+        if (!Number.isInteger(duckIndex) || duckIndex < 0 || duckIndex >= ducks.length) {
+            displayDucks([createNoResultsCard()]);
+            return;
+        }
+
+        displayDucks([ducks[duckIndex]]);
+    }
+
+    function getDuckIndexFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const duckParam = params.get('duck');
+        const index = Number(duckParam);
+
+        if (!duckParam || !Number.isInteger(index) || index < 1 || index > ducks.length) {
+            return { index: null };
+        }
+
+        return { index };
+    }
+
+    function setSingleView(enabled) {
+        if (enabled) {
+            document.body.classList.add('single-view');
+        } else {
+            document.body.classList.remove('single-view');
+        }
+    }
+
+    function showHomeButton(show) {
+    if (show) {
+        homeButton.classList.remove('hidden');
+    } else {
+        homeButton.classList.add('hidden');
+    }
+}
+
     // Mettre à jour le total complet de la collection
     function updateTotalDucks() {
         const grandTotal = ducks.reduce((sum, duck) => sum + (duck.quantity || 0), 0);
@@ -152,17 +202,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Écouteurs sur les menus
     colorFilter.addEventListener('change', function() {
+        selectedDuckIndex = null;
         applyFilters();
+        showHomeButton(false);
         updateTotalDucks();
     });
 
     typeFilter.addEventListener('change', function() {
+        selectedDuckIndex = null;
         applyFilters();
+        showHomeButton(false);
         updateTotalDucks();
     });
 
     brandFilter.addEventListener('change', function() {
+        selectedDuckIndex = null;
         applyFilters();
+        showHomeButton(false);
         updateTotalDucks();
+    });
+
+    homeButton.addEventListener('click', function() {
+        window.location.href = window.location.pathname;
     });
 });
