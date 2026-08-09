@@ -38,15 +38,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Créer la carte "Aucun Canards Trouvé"
     function createNoResultsCard() {
         return {
-            "name": "",
+            "name": "Aucun",
             "model": "Aucun Canards Trouvé",
             "description": "essayez d'ajuster vos filtres de recherche",
             "image": "./images/404.png",
             "quantity": 0,
-            "lore": "",
+            "lore": "Aucun",
             "tags": [],
             "dateAdded": getTodayDate()
         };
+    }
+
+    function sortDucksByDateAdded(duckList) {
+        return [...duckList].sort((a, b) => {
+            const dateA = a.dateAdded && a.dateAdded !== 'Aucun' ? new Date(a.dateAdded).getTime() : 0;
+            const dateB = b.dateAdded && b.dateAdded !== 'Aucun' ? new Date(b.dateAdded).getTime() : 0;
+            return dateB - dateA;
+        });
     }
 
     // Charger les données depuis le fichier JSON
@@ -115,8 +123,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         const matchedCount = matched.length;
+        const sortedMatched = sortDucksByDateAdded(matched);
 
-        let ducksToDisplay = matchedCount === 0 ? [createNoResultsCard()] : matched;
+        let ducksToDisplay = matchedCount === 0 ? [createNoResultsCard()] : sortedMatched;
         displayDucks(ducksToDisplay);
 
         const hasActiveFilter = selectedColor !== '-' || selectedType !== '-' || selectedBrand !== '-';
